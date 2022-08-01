@@ -19,7 +19,7 @@ else
 	TAG=""
 fi
 
-[[ "${CORESTING}" != "" ]] && export DG_ARCHIVE_DIR="${CORESTING}/$(basename ${DG_ARCHIVE_DIR})"
+[[ "${CORESTING}" != "" ]] && [[ "${DG_ARCHIVE_DIR}" != "" ]] && export DG_ARCHIVE_DIR="${CORESTING}/$(basename ${DG_ARCHIVE_DIR})"
 
 # setup my aliases
 alias RUN='RUN -q'
