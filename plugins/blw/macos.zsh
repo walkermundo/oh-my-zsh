@@ -36,4 +36,5 @@ then
 	addPath "${HOME}/bin"
 	addPath "/usr/local/mysql/bin"
 	addPath "/usr/local/opt/openssl@1.1/bin"
+	addPath "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
