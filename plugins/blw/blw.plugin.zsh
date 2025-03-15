@@ -23,17 +23,12 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 alias rm='rm -i'
 alias egrep='grep -E --color'
-alias fgrep='fgrep -F --color'
+alias fgrep='grep -F --color'
 alias grep='grep --color'
 
 if [[ $(uname) != "Darwin" ]]
 then
 	alias ls='ls --color'
-fi
-
-if [[ -f "${HOME}/.ssh/good_hosts" ]]
-then
-	cp "${HOME}/.ssh/good_hosts" "${HOME}/.ssh/known_hosts"
 fi
 
 if [[ -f "${HOME}/.dotnet/tools" ]]
