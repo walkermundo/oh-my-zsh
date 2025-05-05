@@ -31,10 +31,9 @@ then
 	export GOROOT="/usr/local/opt/go/libexec"
 	export GOPATH="${HOME}/code/go"
 
+	addPath "${HOME}/git/bin"
 	addPath "${GOROOT}/bin"
 	addPath "${HOME}/code/go/bin"
 	addPath "${HOME}/bin"
-	addPath "/usr/local/mysql/bin"
-	addPath "/usr/local/opt/openssl@1.1/bin"
 	addPath "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
