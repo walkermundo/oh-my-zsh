@@ -20,6 +20,7 @@ source $ZSH/plugins/blw/ubuntu.zsh
 [[ -s "${HOME}/.hostrc" ]] && source "${HOME}/.hostrc"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DOTNET_NOLOGO=1
 
 alias rm='rm -i'
 alias egrep='grep -E --color'
