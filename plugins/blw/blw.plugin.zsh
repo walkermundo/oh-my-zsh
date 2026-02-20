@@ -26,6 +26,7 @@ alias rm='rm -i'
 alias egrep='grep -E --color'
 alias fgrep='grep -F --color'
 alias grep='grep --color'
+alias awslogin='aws sso login --no-browser --use-device-code'
 
 if [[ $(uname) != "Darwin" ]]
 then
