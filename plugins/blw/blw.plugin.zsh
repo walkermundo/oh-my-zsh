@@ -1,14 +1,14 @@
 if [[ ${TERM} != wy* ]]
 then
-	if ( tput -T xterm-256color colors >/dev/null 2>&1 )
-	then
-		export TERM=xterm-256color
-	elif ( tput -T xterm-color colors >/dev/null 2>&1 )
-	then
-		export TERM=xterm-color
-	else
-		export TERM=xterm
-	fi
+  if ( tput -T xterm-256color colors >/dev/null 2>&1 )
+  then
+    export TERM=xterm-256color
+  elif ( tput -T xterm-color colors >/dev/null 2>&1 )
+  then
+    export TERM=xterm-color
+  else
+    export TERM=xterm
+  fi
 fi
 
 [[ ${CFLAGS} != *"-g"* ]] && export CFLAGS="${CFLAGS} -g"
@@ -30,12 +30,12 @@ alias awslogin='aws sso login --no-browser --use-device-code'
 
 if [[ $(uname) != "Darwin" ]]
 then
-	alias ls='ls --color'
+  alias ls='ls --color'
 fi
 
 if [[ -f "${HOME}/.dotnet/tools" ]]
 then
-	PATH="${PATH}:${HOME}/.dotnet/tools"
+  PATH="${PATH}:${HOME}/.dotnet/tools"
 fi
 
 set -o vi
