@@ -22,6 +22,9 @@ source $ZSH/plugins/blw/ubuntu.zsh
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export DOTNET_NOLOGO=1
 
+# Claude Code
+#export ENABLE_LSP_TOOL="1"
+
 alias rm='rm -i'
 alias egrep='grep -E --color'
 alias fgrep='grep -F --color'
@@ -36,6 +39,11 @@ fi
 if [[ -f "${HOME}/.dotnet/tools" ]]
 then
   PATH="${PATH}:${HOME}/.dotnet/tools"
+fi
+
+if [[ -f "${HOME}/.local/bin" ]]
+then
+	PATH="${PATH}:${HOME}/.local/bin"
 fi
 
 set -o vi
